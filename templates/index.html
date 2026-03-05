@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Voting App</title>
+</head>
+
+<body>
+
+<h2>Vote for your candidate</h2>
+
+<form action="/vote" method="post">
+<button name="candidate" value="Alice">Vote Alice</button>
+<button name="candidate" value="Bob">Vote Bob</button>
+</form>
+
+<h3>Results</h3>
+
+<p>Alice: {{ votes["Alice"] }}</p>
+<p>Bob: {{ votes["Bob"] }}</p>
+
+</body>
+</html>
